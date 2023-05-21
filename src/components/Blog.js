@@ -1,5 +1,5 @@
 
-export default function Programming() {
+export default function Blog() {
 
     return(
         <div className='pageContainer redBackground'>

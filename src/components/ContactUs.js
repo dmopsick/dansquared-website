@@ -6,7 +6,7 @@ export default function ContactUs() {
 
     return(
         <div className='section pageContainer redBackground centerText'>
-            <h1 className='sectionHeader'>Contact GSP</h1>
+            <h1 className='sectionHeader'>Contact Us</h1>
             <h2 className='sectionSubheader'>Stop by or hit us up</h2>
            
             <p className='largeBodyText marginTop'>

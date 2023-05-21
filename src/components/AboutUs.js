@@ -1,4 +1,4 @@
-export default function AboutGSP() {
+export default function AboutUs() {
 
     return(
         <div className='pageContainer redBackground'>
