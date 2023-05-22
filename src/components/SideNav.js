@@ -10,9 +10,9 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import MenuIcon from '@mui/icons-material/Menu';
-import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
+// import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import ExploreIcon from '@mui/icons-material/Explore';
-import CreateIcon from '@mui/icons-material/Create';
+// import CreateIcon from '@mui/icons-material/Create';
 
 export default function SideNav() {
     const [state, setState] = React.useState({
@@ -67,7 +67,10 @@ export default function SideNav() {
                     </ListItem>
                 </a>
 
-                <a className='linkNoDecoration' href="/links">
+                <a className='linkNoDecoration' 
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://linktr.ee/dansquared">
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
@@ -80,7 +83,7 @@ export default function SideNav() {
                     </ListItem>
                 </a>
 
-                <a className='linkNoDecoration' href="/blogs">
+                {/* <a className='linkNoDecoration' href="/blogs">
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
@@ -91,9 +94,9 @@ export default function SideNav() {
                             </ListItemText>
                         </ListItemButton>
                     </ListItem>
-                </a>
+                </a> */}
 
-                <a className='linkNoDecoration' href="/contact">
+                {/* <a className='linkNoDecoration' href="/contact">
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
@@ -104,7 +107,7 @@ export default function SideNav() {
                             </ListItemText>
                         </ListItemButton>
                     </ListItem>
-                </a>
+                </a> */}
             </List>
 
         </Box>

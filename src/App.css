@@ -76,7 +76,7 @@ p, a, label, span, li {
 }
 
 a {
-  color: skyblue
+  color: white
 }
 
 .pageContainer {
@@ -86,6 +86,10 @@ a {
 
 .redBackground {
   background-color: #a7171a;
+}
+
+.light-blue-background {
+  background-color: #3d7dca;
 }
 
 .linkNoDecoration {
@@ -123,4 +127,8 @@ a {
   font-size: 2rem !important;
   margin: 50px !important;
   /* background-color: #a7171a !important; */
+}
+
+.blog-title {
+  text-align: center;
 }
