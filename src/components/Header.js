@@ -8,17 +8,17 @@ import SideNav from './SideNav';
 const useStyles = makeStyles(theme => ({
 
     navBar: {
-        background: "#000000",
+        background: "#010080",
         paddingRight: "0px !important",
         height: "80px",
         color: "white"
     },
 
     header: {
-        fontFamily: "Bebas Neue !important",
-        fontWeight: "bold !important",
+        fontWeight: "bolder !important",
         fontSize: "28px",
         color: "white",
+        fontFamily: "Bebas-Neue",
         textDecoration: "none"
     }
 

@@ -10,12 +10,9 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import MenuIcon from '@mui/icons-material/Menu';
-import ScheduleIcon from '@mui/icons-material/Schedule';
-import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
-import SportsFootballIcon from '@mui/icons-material/SportsFootball';
-import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
-// import RequestQuoteIcon from '@mui/icons-material/RequestQuote';
+import ExploreIcon from '@mui/icons-material/Explore';
+import CreateIcon from '@mui/icons-material/Create';
 
 export default function SideNav() {
     const [state, setState] = React.useState({
@@ -70,11 +67,11 @@ export default function SideNav() {
                     </ListItem>
                 </a>
 
-                <a className='linkNoDecoration' href="/programming">
+                <a className='linkNoDecoration' href="/links">
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
-                                <FitnessCenterIcon />
+                                <ExploreIcon />
                             </ListItemIcon>
                             <ListItemText>
                                 Links
@@ -83,11 +80,11 @@ export default function SideNav() {
                     </ListItem>
                 </a>
 
-                <a className='linkNoDecoration' href="/athletes">
+                <a className='linkNoDecoration' href="/blogs">
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
-                                <SportsFootballIcon />
+                                <CreateIcon />
                             </ListItemIcon>
                             <ListItemText>
                                 Blog
@@ -95,45 +92,6 @@ export default function SideNav() {
                         </ListItemButton>
                     </ListItem>
                 </a>
-
-                <a className='linkNoDecoration' href="/adults">
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <DirectionsRunIcon />
-                            </ListItemIcon>
-                            <ListItemText>
-                                Adult Fitness
-                            </ListItemText>
-                        </ListItemButton>
-                    </ListItem>
-                </a>
-
-                <a className='linkNoDecoration' href="/hours">
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <ScheduleIcon />
-                            </ListItemIcon>
-                            <ListItemText>
-                                Hours
-                            </ListItemText>
-                        </ListItemButton>
-                    </ListItem>
-                </a>
-
-                {/* <a className='linkNoDecoration' href="/pricing">
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <RequestQuoteIcon />
-                            </ListItemIcon>
-                            <ListItemText>
-                                Pricing
-                            </ListItemText>
-                        </ListItemButton>
-                    </ListItem>
-                </a> */}
 
                 <a className='linkNoDecoration' href="/contact">
                     <ListItem disablePadding>
@@ -154,7 +112,7 @@ export default function SideNav() {
 
     return (
         <div>
- 
+
             <React.Fragment key={'left'}>
             <Button onClick={toggleDrawer('left', true)}><MenuIcon style={{color: "white"}} /></Button>
             <Drawer
@@ -165,7 +123,7 @@ export default function SideNav() {
                 {list('left')}
             </Drawer>
             </React.Fragment>
-        
+            
         </div>
     )
 }

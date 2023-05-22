@@ -16,7 +16,6 @@ const useStyles = makeStyles(theme => ({
         textAlign: "center"
     }
 
-
 }));
 
 export default function NoMatch() {

@@ -1,12 +1,13 @@
 
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 export default function Footer() {
 
     return(
         <div style={{
-            background: "black",
+            background: "#010080",
             color: "white",
             height: "200px",
             paddingTop: "10px",
@@ -25,7 +26,29 @@ export default function Footer() {
                         <a className='socialIconLink'
                             target="_blank"
                             rel="noreferrer" 
-                            href="https://www.instagram.com/gardenstateperformance_/">
+                            href="https://youtube.com/@dansquared___">
+                            <YouTubeIcon fontSize='large' />
+                        </a>
+                    </div>
+                    <div className='socialIconContainer'>
+                        <a className='socialIconLink'
+                            target="_blank"
+                            rel="noreferrer" 
+                            href="https://tiktok.com/@dansquared___">
+                            <img 
+                                src="../tiktok.png"
+                                alt="TikTok Logo"
+                                style={{
+                                    maxWidth: "30px"
+                                }}
+                             />
+                        </a>
+                    </div>
+                    <div className='socialIconContainer'>
+                        <a className='socialIconLink'
+                            target="_blank"
+                            rel="noreferrer" 
+                            href="https://www.instagram.com/dansquared___/">
                             <InstagramIcon fontSize='large' />
                         </a>
                     </div>
@@ -33,23 +56,21 @@ export default function Footer() {
                         <a className='socialIconLink'
                             target="_blank"
                             rel="noreferrer" 
-                            href="https://www.youtube.com/channel/UC_PjfKHV8wfWTIinmjaHPLg">
-                            <YouTubeIcon fontSize='large' />
+                            href="https://twitter.com/dansquared___">
+                            <TwitterIcon fontSize='large' />
                         </a>
                     </div>
             </div>
             <hr />
             <p>
-                <a href="mailto:gardenstateperf@gmail.com"
+                <a href="mailto:dansquaredbusiness@gmail.com"
                     style={{
                         color: "white"
                     }}
-                >GardenStatePerf@gmail.com </a>
-                •
-                732-245-7494 
+                >dansquaredbusiness@gmail.com </a>
             </p>
             <p>
-                1701 Valley Road Unit E, Ocean, NJ 07712
+                Est. 2022
             </p>
             <hr />
         
