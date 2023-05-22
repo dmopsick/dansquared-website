@@ -1,4 +1,4 @@
-import GymTourVideo from '../video/gymTourVideo.mp4';
+import BackgroundVideo from '../video/dansquared-background-video.mp4';
 // import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { makeStyles } from '@mui/styles';
 // import AddIcon from '@mui/icons-material/Add';
@@ -46,12 +46,11 @@ export default function Home() {
                         positon: "absolute",
                         width: "100%",
                         height: "100%",
-                        objectFit: "cover",
-                        zIndex: "-100",
-                        filter: "grayscale(100%)"
+                        //objectFit: "cover",
+                        zIndex: "-100"
                     }}
                 >
-                    <source src={GymTourVideo} type="video/mp4" />
+                    <source src={BackgroundVideo} type="video/mp4" />
                 </video>
                 <div style={{   
                         zIndex: "100",
