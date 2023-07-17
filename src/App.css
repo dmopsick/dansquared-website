@@ -48,7 +48,7 @@ p, a, label, span, li {
 }
 
 .sectionCaption {
-  font-size: 22px;
+  font-size: 24px;
   width: 90%;
   margin: auto;
   margin-top: 8px;
@@ -58,6 +58,7 @@ p, a, label, span, li {
 
 .section {
   height: 850px;
+  max-height: 850px;
 }
 
 .longSection {
@@ -140,4 +141,16 @@ a {
 
 .blog-title {
   text-align: center;
+}
+
+.text-background {
+  text-shadow:
+  0.05em 0 black,
+  0 0.05em black,
+  -0.05em 0 black,
+  0 -0.05em black,
+  -0.05em -0.05em black,
+  -0.05em 0.05em black,
+  0.05em -0.05em black,
+  0.05em 0.05em black;
 }

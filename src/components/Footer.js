@@ -70,7 +70,7 @@ export default function Footer() {
                 >dansquaredbusiness@gmail.com </a>
             </p>
             <p>
-                Est. 2022
+                Delivering the DanSquared Difference since 2023
             </p>
             <hr />
         

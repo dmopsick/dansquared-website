@@ -36,7 +36,7 @@ export default function Home() {
 
     return (
         <div className={classes.homeContainer}>
-            <div className="section">
+            <div className="section light-blue-background">
                 <video
                     autoPlay
                     loop
@@ -63,60 +63,48 @@ export default function Home() {
                         alignContent: "center"
                     }}
                 >
-                    <img src="/logo1200.png"
-                        alt="DanSquared Logo"
-                        style={{
-                            width: "50%",
-                            flexBasis: "20%",
-                            maxHeight: "500px",
-                            maxWidth: "250px",
-                            opacity: "60%"
-                        }}
-                    />
+                <img src="/logo1200.png"
+                    alt="DanSquared Logo"
+                    style={{
+                        width: "50%",
+                        flexBasis: "20%",
+                        maxHeight: "500px",
+                        maxWidth: "250px",
+                        opacity: "60%"
+                    }}
+                />
 
-                    <Link to="info"
-                        smooth={true}
-                        duration={500}
-                        style={{
-                            color: "white",
-                            flexBasis: "100%"
-                        }}>
-                            
-                        <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
-                    </Link>
+                <Link to="section1"
+                    smooth={true}
+                    duration={500}
+                    style={{
+                        color: "white",
+                        flexBasis: "100%"
+                    }}>
+                        
+                    <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
+                </Link>
                     
                 </div>
             </div>
         
-            <div id="info" className='section two-dan-background'>
-                <h1 className='sectionHeader'>Two Dans are Better Than one</h1> 
-                <p className='sectionCaption'>We are two best friends named Dan who are on a content creation journey.</p>
+            <div id="section2" className='section two-dan-background'>
+                <h1 className='sectionHeader text-background'>Two Dans Are Better Than One</h1> 
+                <p className='sectionCaption text-background'>We are two best friends named Dan on a content creation journey together.</p>
                     
-                    <Button className='button' 
-                        variant="contained" 
-                        size="large"
-                        href="/athletes">
-                            Athletes
-                        </Button>
-                    
-               
-                    
-                    <Button className='button'
-                        variant="contained" 
-                        size="large"
-                        href="adults">
-                            Adult Fitness
-                    </Button>
-                    
-                    <Link to="training"
+                    <Link to="section2"
                         smooth={true}
                         duration={500}
                         style={{
-                            textDecoration: "none",
-                            color: "white"
-                        }}
-                    >
-                        <h1>Training at GSP <ArrowDownwardIcon className={classes.movingArrow} fontSize="large" /></h1>
+                            color: "white",
+                            flexBasis: "100%",
+                            padding: "2em",
+                            left: "50%",
+                            top: "50%",
+                            transform: "translate(-50%, -50%)",
+                        }}>
+         
+                        <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
                     </Link>
                 </div>
 
