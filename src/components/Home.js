@@ -1,14 +1,14 @@
 import BackgroundVideo from '../video/dansquared-background-video.mp4';
-// import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { makeStyles } from '@mui/styles';
 // import AddIcon from '@mui/icons-material/Add';
-// import { Link } from "react-scroll";
-// import Button from '@mui/material/Button';
+import { Link } from "react-scroll";
+import Button from '@mui/material/Button';
 
 const useStyles = makeStyles(theme => ({
     movingArrow: {
         animation: "arrow-jump 1s infinite",
-        color: "#010080"
+        color: "#E4E816"
     },
 
     homeContainer: {
@@ -46,7 +46,7 @@ export default function Home() {
                         positon: "absolute",
                         width: "100%",
                         height: "100%",
-                        //objectFit: "cover",
+                        objectFit: "cover",
                         zIndex: "-100"
                     }}
                 >
@@ -68,11 +68,13 @@ export default function Home() {
                         style={{
                             width: "50%",
                             flexBasis: "20%",
-                            maxHeight: "500px"
+                            maxHeight: "500px",
+                            maxWidth: "250px",
+                            opacity: "60%"
                         }}
                     />
 
-                    {/* <Link to="info"
+                    <Link to="info"
                         smooth={true}
                         duration={500}
                         style={{
@@ -81,14 +83,14 @@ export default function Home() {
                         }}>
                             
                         <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
-                    </Link> */}
+                    </Link>
                     
                 </div>
             </div>
         
-            {/* <div id="info" className='section'>
+            <div id="info" className='section two-dan-background'>
                 <h1 className='sectionHeader'>Two Dans are Better Than one</h1> 
-                <p className='sectionCaption'>We are two best friends named Dan on a content creation journey.</p>
+                <p className='sectionCaption'>We are two best friends named Dan who are on a content creation journey.</p>
                     
                     <Button className='button' 
                         variant="contained" 
@@ -116,7 +118,7 @@ export default function Home() {
                     >
                         <h1>Training at GSP <ArrowDownwardIcon className={classes.movingArrow} fontSize="large" /></h1>
                     </Link>
-                </div> */}
+                </div>
 
                 {/* <div id="training" className='section redBackground'>
 

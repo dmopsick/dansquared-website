@@ -92,6 +92,15 @@ a {
   background-color: #3d7dca;
 }
 
+.two-dan-background {
+  background-image: url('./images/dansquared-sunset.png');
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .linkNoDecoration {
   color: rgb(0, 0, 0, 0.87);
   text-decoration: none;
