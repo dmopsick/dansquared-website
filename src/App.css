@@ -61,6 +61,10 @@ p, a, label, span, li {
   max-height: 850px;
 }
 
+.medium-section {
+  height: 1000px;
+}
+
 .long-section {
   height: 1200px;
 }

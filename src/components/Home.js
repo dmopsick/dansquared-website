@@ -127,7 +127,7 @@ export default function Home() {
             </div>
 
 
-            <div id="section4" className='long-section sand-background'>
+            <div id="section4" className='medium-section sand-background'>
                 <h1 className='sectionHeader'>The DanSquared Difference</h1>
                 <p className='sectionCaption'>
                     We believe you cannot fake passion and enthusiasm.
