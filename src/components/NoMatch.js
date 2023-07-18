@@ -11,7 +11,8 @@ export default function NoMatch() {
                    <img src={MoneyMike}
                         style={{
                             width: "80%",
-                            margin: "auto"
+                            margin: "auto",
+                            maxWidth: "300px"
                         }}
                         alt="Money Mike"
                     /> 

@@ -13,6 +13,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 // import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import ExploreIcon from '@mui/icons-material/Explore';
 // import CreateIcon from '@mui/icons-material/Create';
+import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 
 export default function SideNav() {
     const [state, setState] = React.useState({
@@ -54,7 +55,7 @@ export default function SideNav() {
                     </ListItem>
                 </a>
 
-                <a className='linkNoDecoration' href="/about">
+                {/* <a className='linkNoDecoration' href="/about">
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
@@ -65,11 +66,12 @@ export default function SideNav() {
                             </ListItemText>
                         </ListItemButton>
                     </ListItem>
-                </a>
+                </a> */}
 
                 <a className='linkNoDecoration' 
                     target="_blank"
                     rel="noreferrer"
+                    target="_blank"
                     href="https://linktr.ee/dansquared">
                     <ListItem disablePadding>
                         <ListItemButton>
@@ -78,6 +80,40 @@ export default function SideNav() {
                             </ListItemIcon>
                             <ListItemText>
                                 Links
+                            </ListItemText>
+                        </ListItemButton>
+                    </ListItem>
+                </a>
+
+                <a className='linkNoDecoration' 
+                    target="_blank"
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://linktr.ee/dansquared_promoted">
+                    <ListItem disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <LocalOfferIcon />
+                            </ListItemIcon>
+                            <ListItemText>
+                                Affiliate Links
+                            </ListItemText>
+                        </ListItemButton>
+                    </ListItem>
+                </a>
+
+                <a className='linkNoDecoration' 
+                    target="_blank"
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://forms.gle/PrN36pPQ3F96jQZr8">
+                    <ListItem disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <LocalOfferIcon />
+                            </ListItemIcon>
+                            <ListItemText>
+                                Feedback
                             </ListItemText>
                         </ListItemButton>
                     </ListItem>

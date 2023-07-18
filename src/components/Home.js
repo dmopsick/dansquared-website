@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     homeContainer: {
         color: "white",
         background: "black",
-        textAlign: "center"  
+        textAlign: "center"
     },
 
     hoursLink: {
@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
         width: "90%",
         marginBottom: "20px"
     }
-    
+
 }));
 
 export default function Home() {
@@ -54,52 +54,52 @@ export default function Home() {
                 >
                     <source src={BackgroundVideo} type="video/mp4" />
                 </video>
-                <div style={{   
-                        zIndex: "100",
-                        position: "absolute",
-                        width: "100%",
-                        top: "20%",
-                        display: "flex",
-                        flexWrap: "wrap",
-                        justifyContent: "center",
-                        alignContent: "center"
-                    }}
+                <div style={{
+                    zIndex: "100",
+                    position: "absolute",
+                    width: "100%",
+                    top: "20%",
+                    display: "flex",
+                    flexWrap: "wrap",
+                    justifyContent: "center",
+                    alignContent: "center"
+                }}
                 >
-                <img src="/logo1200.png"
-                    alt="DanSquared Logo"
-                    style={{
-                        width: "50%",
-                        flexBasis: "20%",
-                        maxHeight: "500px",
-                        maxWidth: "250px",
-                        opacity: "60%"
-                    }}
-                />
+                    <img src="/logo1200.png"
+                        alt="DanSquared Logo"
+                        style={{
+                            width: "50%",
+                            flexBasis: "20%",
+                            maxHeight: "500px",
+                            maxWidth: "250px",
+                            opacity: "60%"
+                        }}
+                    />
 
-                <Link to="section2"
-                    smooth={true}
-                    duration={500}
-                    style={{
-                        color: "white",
-                        flexBasis: "100%"
-                    }}>
-                        
-                    <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
-                </Link>
-                    
+                    <Link to="section2"
+                        smooth={true}
+                        duration={500}
+                        style={{
+                            color: "white",
+                            flexBasis: "100%"
+                        }}>
+
+                        <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
+                    </Link>
+
                 </div>
             </div>
-        
+
             <div id="section2" className='section two-dan-background'>
                 <div style={{
                     paddingTop: "440px"
                 }}>
                     <div className='text-background'>
-                        <h1 className='sectionHeader'>Two Dans Are Better Than One</h1> 
+                        <h1 className='sectionHeader'>Two Dans Are Better Than One</h1>
                         <p className='sectionCaption'>Our mission is to build an inclusive and energetic community through engaging, entertaining, and most importantly FUN content.</p>
                     </div>
                 </div>
-            
+
                 <Link to="section3"
                     smooth={true}
                     duration={500}
@@ -111,25 +111,25 @@ export default function Home() {
                         top: "50%",
                         transform: "translate(-50%, -50%)",
                     }}>
-        
-                    <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
+
+                    <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
                 </Link>
             </div>
 
             <div id="section3" className='section light-blue-background'>
-                <h1 className='sectionHeader'>Who are we?</h1> 
+                <h1 className='sectionHeader'>Who are we?</h1>
                 <p className='sectionCaption'>
                     We are two best friends named Dan on a content creation journey together.
                 </p>
-                
+
                 <img className='rounded-face-image'
-                    src={SunDanFace} 
+                    src={SunDanFace}
                     alt="Sun Dan"
                 />
                 <h2 className='sectionCaption'>Sun Dan</h2>
 
                 <img className='rounded-face-image'
-                    src={MoonDanFace} 
+                    src={MoonDanFace}
                     alt="Moon Dan"
                 />
                 <h2 className='sectionCaption'>Moon Dan</h2>
@@ -145,18 +145,18 @@ export default function Home() {
                         top: "50%",
                         transform: "translate(-50%, -50%)",
                     }}>
-        
-                    <ArrowDownwardIcon className={classes.movingArrow}  style={{fontSize: "96px"}} />
-                </Link>
-            </div> 
 
-            
+                    <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
+                </Link>
+            </div>
+
+
             <div id="section4" className='section sand-background'>
                 <h1 className='sectionHeader'>The DanSquared Difference</h1>
                 <p className='sectionCaption'>
                     We believe you cannot fake passion and enthusiasm.
                     We are passionate about making content and engaging with our community, The DANimals.
-                    <br/>
+                    <br />
                     We specialize in video game content. We are currently playing...
                 </p>
                 <ul className='info-list'>
@@ -166,20 +166,20 @@ export default function Home() {
                     <li>Co op games</li>
                     <li>And more!</li>
                 </ul>
-                
+
                 <p className='sectionCaption'>We are your go to source for Tera Raid Builds in Pokémon Scarlet and Violet.</p>
 
-
                 <Button className='button'
-                        variant="contained" 
-                        size="small"
-                        href="https://linktr.ee/dansquared">
+                    variant="contained"
+                    size="small"
+                    target="_blank"
+                    href="https://linktr.ee/dansquared">
                     Join the Danimals
                 </Button>
-             
-            </div>
 
             </div>
+
+        </div>
 
     )
 }
