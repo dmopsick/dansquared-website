@@ -11,8 +11,7 @@ export default function Home() {
         <div className='center-text' style={{
             boxSizing: "border-box",
             color: "white",
-            width: "100%",
-            padding: "0"
+            overflow: "hidden"
         }}>
             <div className="section light-blue-background">
                 <video
