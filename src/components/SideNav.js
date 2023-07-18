@@ -110,7 +110,7 @@ export default function SideNav() {
                                 <LocalOfferIcon />
                             </ListItemIcon>
                             <ListItemText>
-                                Feedback
+                                Feedback TEST
                             </ListItemText>
                         </ListItemButton>
                     </ListItem>
