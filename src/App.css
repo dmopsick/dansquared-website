@@ -106,6 +106,7 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  boxSizing: "border-box",
 }
 
 .linkNoDecoration {

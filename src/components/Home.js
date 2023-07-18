@@ -69,7 +69,7 @@ export default function Home() {
 
             <div id="section2" className='section two-dan-background'>
                 <div style={{
-                    paddingTop: "400px"
+                    paddingTop: "380px"
                 }}>
                     <div className='text-background'>
                         <h1 className='sectionHeader'>Two Dans Are Better Than One</h1>
