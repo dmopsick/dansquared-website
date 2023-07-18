@@ -50,6 +50,7 @@ export default function Home() {
                         height: "100%",
                         objectFit: "cover",
                         zIndex: "-100"
+
                     }}
                 >
                     <source src={BackgroundVideo} type="video/mp4" />
@@ -90,7 +91,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div id="section2" className='section two-dan-background'>
+            <div id="section2" className='section'>
                 <div style={{
                     paddingTop: "440px"
                 }}>
