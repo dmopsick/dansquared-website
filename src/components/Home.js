@@ -10,7 +10,9 @@ export default function Home() {
     return (
         <div className='center-text' style={{
             boxSizing: "border-box",
-            color: "white"
+            color: "white",
+            width: "100%",
+            padding: "0"
         }}>
             <div className="section light-blue-background">
                 <video
@@ -67,7 +69,7 @@ export default function Home() {
 
             <div id="section2" className='section two-dan-background'>
                 <div style={{
-                    paddingTop: "440px"
+                    paddingTop: "400px"
                 }}>
                     <div className='text-background'>
                         <h1 className='sectionHeader'>Two Dans Are Better Than One</h1>
