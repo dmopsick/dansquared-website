@@ -8,7 +8,7 @@ import MoonDanFace from "../images/moon-dan-face.png";
 export default function Home() {
 
     return (
-        <div className='pageContainer center-text' style={{
+        <div className='pageContainercenter-text' style={{
             boxSizing: "border-box"
         }}>
             <div className="section light-blue-background">
@@ -80,7 +80,7 @@ export default function Home() {
                     style={{
                         color: "white",
                         flexBasis: "100%",
-                        padding: "2em",
+                        padding: "2em 0",
                         left: "50%",
                         top: "50%",
                         transform: "translate(-50%, -50%)",
@@ -114,7 +114,7 @@ export default function Home() {
                     style={{
                         color: "white",
                         flexBasis: "100%",
-                        padding: "2em",
+                        padding: "2em 0",
                         left: "50%",
                         top: "50%",
                         transform: "translate(-50%, -50%)",
