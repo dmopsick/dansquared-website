@@ -34,7 +34,7 @@ export default function Home() {
                     zIndex: "100",
                     position: "absolute",
                     width: "100%",
-                    top: "20%",
+                    top: "25%",
                     display: "flex",
                     flexWrap: "wrap",
                     justifyContent: "center",
