@@ -6,9 +6,10 @@ export default function Blog() {
             <div className='long-section'>
                 <h1 className='sectionHeader'>Blog Posts</h1>
                 <ul>
-                    <li>
+                    
+                    {/* <li>
                         <a href="/blog/houndoom-typhlosion">Houndoom Solo Build for Typhlosion 7 Star Tera Event Raid</a>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </div>

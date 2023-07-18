@@ -8,7 +8,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+// import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import MenuIcon from '@mui/icons-material/Menu';
 // import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import ExploreIcon from '@mui/icons-material/Explore';
@@ -71,7 +71,6 @@ export default function SideNav() {
                 <a className='linkNoDecoration' 
                     target="_blank"
                     rel="noreferrer"
-                    target="_blank"
                     href="https://linktr.ee/dansquared">
                     <ListItem disablePadding>
                         <ListItemButton>
@@ -88,7 +87,6 @@ export default function SideNav() {
                 <a className='linkNoDecoration' 
                     target="_blank"
                     rel="noreferrer"
-                    target="_blank"
                     href="https://linktr.ee/dansquared_promoted">
                     <ListItem disablePadding>
                         <ListItemButton>
@@ -105,7 +103,6 @@ export default function SideNav() {
                 <a className='linkNoDecoration' 
                     target="_blank"
                     rel="noreferrer"
-                    target="_blank"
                     href="https://forms.gle/PrN36pPQ3F96jQZr8">
                     <ListItem disablePadding>
                         <ListItemButton>
