@@ -5,7 +5,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 export default function ContactUs() {
 
     return(
-        <div className='section pageContainer redBackground centerText'>
+        <div className='section pageContainer redBackground center-text'>
             <h1 className='sectionHeader'>Contact Us</h1>
             <h2 className='sectionSubheader'>Stop by or hit us up</h2>
            

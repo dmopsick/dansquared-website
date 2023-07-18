@@ -2,9 +2,9 @@ export default function HoundoomTyphlosionBlog() {
 
     return(
         <div className='pageContainer light-blue-background'>
-            <div className='longSection'>
+            <div className='long-section'>
                 <h3 className='blog-title'>Houndoom SOLO BUILD and GUIDE for Typhlosion 7 Star Event Tera Raid • Pokémon Scarlet and Violet</h3>
-                <h4 className='centerText'>Houndoom Build</h4>
+                <h4 className='center=text'>Houndoom Build</h4>
                 <p className='bodyText'>
                     
                 </p>

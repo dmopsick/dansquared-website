@@ -156,7 +156,6 @@ export default function Home() {
                 <p className='sectionCaption'>
                     We believe you cannot fake passion and enthusiasm.
                     We are passionate about making content and engaging with our community, The DANimals.
-                    We are so thrilled to build and grow this community everyday.
                     <br/>
                     We specialize in video game content. We are currently playing...
                 </p>
@@ -167,6 +166,8 @@ export default function Home() {
                     <li>Co op games</li>
                     <li>And more!</li>
                 </ul>
+                
+                <p className='sectionCaption'>We are your go to source for Tera Raid Builds in Pokémon Scarlet and Violet.</p>
 
 
                 <Button className='button'

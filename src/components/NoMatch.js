@@ -4,10 +4,20 @@ export default function NoMatch() {
 
     return(
         <div className="pageContainer light-blue-background">
-            <div className='longSection'>
+            <div className='section'>
                 <h1 className="sectionHeader">404 Page Not Found</h1>
-                <img src={MoneyMike} />
-                <p className="largeBodyText" >Money Mike cannot find what you are looking for. Return <a href="/">Home</a>.</p>
+                
+                <div className="center-text">
+                   <img src={MoneyMike}
+                        style={{
+                            width: "80%",
+                            margin: "auto"
+                        }}
+                        alt="Money Mike"
+                    /> 
+                </div>
+                
+                <p className="sectionCaption" >Money Mike cannot find what you are looking for. Return <a href="/">Home</a>.</p>
             </div>
         </div>
     )
