@@ -8,7 +8,7 @@ import MoonDanFace from "../images/moon-dan-face.png";
 export default function Home() {
 
     return (
-        <div className='center-text' style={{
+        <div className='pageContainer center-text' style={{
             boxSizing: "border-box"
         }}>
             <div className="section light-blue-background">
