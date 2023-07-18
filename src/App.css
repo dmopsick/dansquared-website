@@ -162,3 +162,8 @@ a {
   max-width: 230px;
   border-radius: 50%;
 }
+
+.movingArrow {
+  animation: arrow-jump 1s infinite;
+  color: #E4E816;
+}

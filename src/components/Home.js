@@ -1,43 +1,17 @@
 import BackgroundVideo from '../video/dansquared-background-video.mp4';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { makeStyles } from '@mui/styles';
-// import AddIcon from '@mui/icons-material/Add';
 import { Link } from "react-scroll";
 import Button from '@mui/material/Button';
 import SunDanFace from "../images/sun-dan-face.png";
 import MoonDanFace from "../images/moon-dan-face.png";
 
-const useStyles = makeStyles(theme => ({
-    movingArrow: {
-        animation: "arrow-jump 1s infinite",
-        color: "#E4E816"
-    },
-
-    homeContainer: {
-        color: "white",
-        background: "black",
-        textAlign: "center"
-    },
-
-    hoursLink: {
-        color: "skyblue",
-        fontSize: "32px",
-        margin: "auto"
-    },
-
-    testimonialText: {
-        margin: "auto",
-        width: "90%",
-        marginBottom: "20px"
-    }
-
-}));
-
 export default function Home() {
-    const classes = useStyles();
 
     return (
-        <div className={classes.homeContainer}>
+        <div className='center-text' style={{
+            boxSizing: "border-box"
+        }}>
             <div className="section light-blue-background">
                 <video
                     autoPlay
@@ -50,7 +24,7 @@ export default function Home() {
                         height: "100%",
                         objectFit: "cover",
                         zIndex: "-100"
-
+                        
                     }}
                 >
                     <source src={BackgroundVideo} type="video/mp4" />
@@ -85,13 +59,13 @@ export default function Home() {
                             flexBasis: "100%"
                         }}>
 
-                        <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
+                        <ArrowDownwardIcon className='movingArrow'style={{ fontSize: "96px" }} />
                     </Link>
 
                 </div>
             </div>
 
-            <div id="section2" className='section'>
+            <div id="section2" className='section two-dan-background'>
                 <div style={{
                     paddingTop: "440px"
                 }}>
@@ -113,7 +87,7 @@ export default function Home() {
                         transform: "translate(-50%, -50%)",
                     }}>
 
-                    <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
+                    <ArrowDownwardIcon className='movingArrow'style={{ fontSize: "96px" }} />
                 </Link>
             </div>
 
@@ -147,7 +121,7 @@ export default function Home() {
                         transform: "translate(-50%, -50%)",
                     }}>
 
-                    <ArrowDownwardIcon className={classes.movingArrow} style={{ fontSize: "96px" }} />
+                    <ArrowDownwardIcon className='movingArrow'style={{ fontSize: "96px" }} />
                 </Link>
             </div>
 
