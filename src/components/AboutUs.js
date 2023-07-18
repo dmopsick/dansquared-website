@@ -2,7 +2,7 @@ export default function AboutUs() {
 
     return(
         <div className='pageContainer light-blue-background'>
-            <div className='longSection'>
+            <div className='long-section'>
                 <h1 className='sectionHeader'>About Us</h1>
                 <p className='largeBodyText'>
                     We are two best friends named Dan that share a passion for video games and bringing people together. Together we are on a content journey

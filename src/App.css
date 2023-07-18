@@ -22,7 +22,7 @@ p, a, label, span, li {
   font-family: "Varta" !important;
 }
 
-.infoList {
+.info-list {
   text-align: left;
   width: 85%;
   margin: auto;
@@ -61,7 +61,7 @@ p, a, label, span, li {
   max-height: 850px;
 }
 
-.longSection {
+.long-section {
   height: 1200px;
 }
 
@@ -91,6 +91,10 @@ a {
 
 .light-blue-background {
   background-color: #3d7dca;
+}
+
+.sand-background {
+  background-color: #ca8a3d;
 }
 
 .two-dan-background {
@@ -144,13 +148,13 @@ a {
 }
 
 .text-background {
-  text-shadow:
-  0.05em 0 black,
-  0 0.05em black,
-  -0.05em 0 black,
-  0 -0.05em black,
-  -0.05em -0.05em black,
-  -0.05em 0.05em black,
-  0.05em -0.05em black,
-  0.05em 0.05em black;
+  background: lightgray;
+  background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+  background: rgba(61, 61, 61, 0.8);
+}
+
+.rounded-face-image {
+  width: 50%;
+  max-width: 230px;
+  border-radius: 50%;
 }
