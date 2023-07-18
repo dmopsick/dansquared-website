@@ -1,6 +1,5 @@
 import BackgroundVideo from '../video/dansquared-background-video.mp4';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import { makeStyles } from '@mui/styles';
 import { Link } from "react-scroll";
 import Button from '@mui/material/Button';
 import SunDanFace from "../images/sun-dan-face.png";
