@@ -8,12 +8,10 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-// import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import MenuIcon from '@mui/icons-material/Menu';
-// import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import ExploreIcon from '@mui/icons-material/Explore';
-// import CreateIcon from '@mui/icons-material/Create';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
+import FeedbackIcon from '@mui/icons-material/Feedback';
 
 export default function SideNav() {
     const [state, setState] = React.useState({
@@ -107,7 +105,7 @@ export default function SideNav() {
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
-                                <LocalOfferIcon />
+                                <FeedbackIcon />
                             </ListItemIcon>
                             <ListItemText>
                                 Feedback
