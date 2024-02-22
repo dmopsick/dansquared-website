@@ -101,8 +101,8 @@ a {
   background-color: #ca8a3d;
 }
 
-.two-dan-background {
-  background-image: url('./images/dansquared-sunset.png');
+.dan-banner-background {
+  background-image: url('./images/dansquared-phone-background.png');
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -122,7 +122,7 @@ a {
 }
 
 .socialIconContainer {
-  flex-basis: 25%;
+  flex-basis: 20%;
   text-align: center;
   margin: auto;
 }
@@ -156,7 +156,7 @@ a {
 .text-background {
   background: lightgray;
   background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
-  background: rgba(61, 61, 61, 0.8);
+  background: rgba(61, 61, 61, 0.9);
 }
 
 .rounded-face-image {
@@ -167,5 +167,5 @@ a {
 
 .movingArrow {
   animation: arrow-jump 1s infinite;
-  color: #E4E816;
+  color: #fafafa;
 }

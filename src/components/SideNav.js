@@ -14,46 +14,47 @@ import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import FeedbackIcon from '@mui/icons-material/Feedback';
 
 export default function SideNav() {
-    const [state, setState] = React.useState({
-        left: false
-    });
+  const [state, setState] = React.useState({
+    left: false,
+  });
 
-    const toggleDrawer = (anchor, open) => (event) => {
-        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-            return;
-        }
-
-        setState({ ...state, [anchor]: open });
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (event.type === 'keydown' &&
+    (event.key === 'Tab' || event.key === 'Shift')) {
+      return;
     }
 
-    const list = (anchor) => (
-        <Box
-            sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
-            role="presentation"
-            onClick={toggleDrawer(anchor, false)}
-            onKeyDown={toggleDrawer(anchor, false)}
-        >
-            <List>
-                <a className='linkNoDecoration' href="/">
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <img src="/logo192.png"
-                                    style={{
-                                        width: "24px",
-                                        height: "24px"
-                                    }}
-                                    alt="Home"
-                                />
-                            </ListItemIcon>
-                            <ListItemText>
-                            Home
-                            </ListItemText>
-                        </ListItemButton>
-                    </ListItem>
-                </a>
+    setState({...state, [anchor]: open});
+  };
 
-                {/* <a className='linkNoDecoration' href="/about">
+  const list = (anchor) => (
+    <Box
+      sx={{width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250}}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}
+    >
+      <List>
+        <a className='linkNoDecoration' href="/">
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <img src="/logo192.png"
+                  style={{
+                    width: '24px',
+                    height: '24px',
+                  }}
+                  alt="Home"
+                />
+              </ListItemIcon>
+              <ListItemText>
+                            Home
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+        </a>
+
+        {/* <a className='linkNoDecoration' href="/about">
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
@@ -66,55 +67,55 @@ export default function SideNav() {
                     </ListItem>
                 </a> */}
 
-                <a className='linkNoDecoration' 
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://linktr.ee/dansquared">
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <ExploreIcon />
-                            </ListItemIcon>
-                            <ListItemText>
+        <a className='linkNoDecoration'
+          target="_blank"
+          rel="noreferrer"
+          href="https://linktr.ee/dansquared">
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <ExploreIcon />
+              </ListItemIcon>
+              <ListItemText>
                                 Links
-                            </ListItemText>
-                        </ListItemButton>
-                    </ListItem>
-                </a>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+        </a>
 
-                <a className='linkNoDecoration' 
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://linktr.ee/dansquared_promoted">
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <LocalOfferIcon />
-                            </ListItemIcon>
-                            <ListItemText>
+        <a className='linkNoDecoration'
+          target="_blank"
+          rel="noreferrer"
+          href="https://linktr.ee/dansquared_promoted">
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <LocalOfferIcon />
+              </ListItemIcon>
+              <ListItemText>
                                 Affiliate Links
-                            </ListItemText>
-                        </ListItemButton>
-                    </ListItem>
-                </a>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+        </a>
 
-                <a className='linkNoDecoration' 
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://forms.gle/PrN36pPQ3F96jQZr8">
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <FeedbackIcon />
-                            </ListItemIcon>
-                            <ListItemText>
+        <a className='linkNoDecoration'
+          target="_blank"
+          rel="noreferrer"
+          href="https://forms.gle/PrN36pPQ3F96jQZr8">
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <FeedbackIcon />
+              </ListItemIcon>
+              <ListItemText>
                                 Feedback
-                            </ListItemText>
-                        </ListItemButton>
-                    </ListItem>
-                </a>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+        </a>
 
-                {/* <a className='linkNoDecoration' href="/blogs">
+        {/* <a className='linkNoDecoration' href="/blogs">
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
@@ -127,7 +128,7 @@ export default function SideNav() {
                     </ListItem>
                 </a> */}
 
-                {/* <a className='linkNoDecoration' href="/contact">
+        {/* <a className='linkNoDecoration' href="/contact">
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
@@ -139,25 +140,29 @@ export default function SideNav() {
                         </ListItemButton>
                     </ListItem>
                 </a> */}
-            </List>
+      </List>
 
-        </Box>
-    );
+    </Box>
+  );
 
-    return (
-        <div>
+  return (
+    <div>
 
-            <React.Fragment key={'left'}>
-            <Button onClick={toggleDrawer('left', true)}><MenuIcon style={{color: "white"}} /></Button>
-            <Drawer
-                anchor={'left'}
-                open={state['left']}
-                onClose={toggleDrawer('left', false)}
-            >
-                {list('left')}
-            </Drawer>
-            </React.Fragment>
-            
-        </div>
-    )
+      <React.Fragment key={'left'}>
+        <Button onClick={
+          toggleDrawer('left', true)}
+        >
+          <MenuIcon style={{color: 'white'}} />
+        </Button>
+        <Drawer
+          anchor={'left'}
+          open={state['left']}
+          onClose={toggleDrawer('left', false)}
+        >
+          {list('left')}
+        </Drawer>
+      </React.Fragment>
+
+    </div>
+  );
 }
