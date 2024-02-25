@@ -12,6 +12,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ExploreIcon from '@mui/icons-material/Explore';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import FeedbackIcon from '@mui/icons-material/Feedback';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 export default function SideNav() {
   const [state, setState] = React.useState({
@@ -20,7 +21,7 @@ export default function SideNav() {
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (event.type === 'keydown' &&
-    (event.key === 'Tab' || event.key === 'Shift')) {
+      (event.key === 'Tab' || event.key === 'Shift')) {
       return;
     }
 
@@ -48,7 +49,23 @@ export default function SideNav() {
                 />
               </ListItemIcon>
               <ListItemText>
-                            Home
+                Home
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+        </a>
+
+        <a className='linkNoDecoration'
+          target="_blank"
+          rel="noreferrer"
+          href="https://dansquared.shop/">
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <ShoppingCartIcon />
+              </ListItemIcon>
+              <ListItemText>
+                Merch Shop
               </ListItemText>
             </ListItemButton>
           </ListItem>
@@ -77,7 +94,7 @@ export default function SideNav() {
                 <ExploreIcon />
               </ListItemIcon>
               <ListItemText>
-                                Links
+                Links
               </ListItemText>
             </ListItemButton>
           </ListItem>
@@ -93,7 +110,7 @@ export default function SideNav() {
                 <LocalOfferIcon />
               </ListItemIcon>
               <ListItemText>
-                                Affiliate Links
+                Affiliate Links
               </ListItemText>
             </ListItemButton>
           </ListItem>
@@ -109,7 +126,7 @@ export default function SideNav() {
                 <FeedbackIcon />
               </ListItemIcon>
               <ListItemText>
-                                Feedback
+                Feedback
               </ListItemText>
             </ListItemButton>
           </ListItem>
@@ -123,19 +140,6 @@ export default function SideNav() {
                             </ListItemIcon>
                             <ListItemText>
                                 Blog
-                            </ListItemText>
-                        </ListItemButton>
-                    </ListItem>
-                </a> */}
-
-        {/* <a className='linkNoDecoration' href="/contact">
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <ConnectWithoutContactIcon />
-                            </ListItemIcon>
-                            <ListItemText>
-                                Contact Us
                             </ListItemText>
                         </ListItemButton>
                     </ListItem>

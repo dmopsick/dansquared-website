@@ -72,11 +72,11 @@ export default function Home() {
         }}>
           <div className='text-background'>
             <h1 className='sectionHeader'>Play the games you love with good people</h1>
-            <p className='sectionCaption'>
-                My mission is to build an inclusive and energetic community through engaging, entertaining, and most importantly FUN content.
-                I want to recapture that magic we all felt as kids playing our favorite games with friends in my streams and videos.
-                I stream on TikTok and YouTube. I am a member of the Diffraction TikTok Live Agency.
-            </p>
+            <div className='sectionCaption'>
+              My mission is to build an inclusive and energetic community through engaging, entertaining, and most importantly FUN content.
+              I want to recapture that magic we all felt as kids playing our favorite games with friends in my streams and videos.
+              It is my goal every day to make at least one viewer&apos;s day better.
+            </div>
           </div>
         </div>
 
@@ -101,9 +101,9 @@ export default function Home() {
       <div id="section3" className='section light-blue-background'>
         <h1 className='sectionHeader'>Who am I?</h1>
         <p className='sectionCaption'>
-                    My name is Sun Dan and my goal is to bring people together around my favorite games.
-                    It is my goal every day to make at least one viewer&apos;s day better.
-                    I get a lot of fulfilment out of making other people laugh or happy which drives me to make the best content I possibly can each day.
+          My name is Sun Dan and my goal is to bring people together around my favorite games.
+          I stream on TikTok and YouTube. I am a member of the <a target='_blank' rel='noreferrer' href='https://tiktoklivestream.com/'>Diffraction TikTok Live Agency</a>.
+          I get a lot of fulfilment out of making other people laugh or happy which drives me to make the best content I possibly can each day.
         </p>
 
         <img className='rounded-face-image'
@@ -134,12 +134,12 @@ export default function Home() {
       <div id="section4" className='medium-section sand-background'>
         <h1 className='sectionHeader'>The DANimal Kingdom</h1>
         <p className='sectionCaption'>
-                    I believe you cannot fake passion and enthusiasm.
-                    I am passionate about making content and engaging with my community, The DANimals.
+          I believe you cannot fake passion and enthusiasm.
+          I am passionate about making content and engaging with my community, The DANimals.
           <br />
-                    I specialize in Pokemon content.
-                    I am a Tera Raid expert. I also enjoy shiny hunting and making Pokémon theories.
-                    I believe content comes first before the game. It&apos;s less about what we are playing and more about who we are playing it with.
+          I specialize in Pokemon content.
+          I am a Tera Raid expert. I also enjoy shiny hunting and making Pokémon theories.
+          I believe it&apos;s less about what we are playing and more about who we are playing it with.
         </p>
 
         <Button className='button'
@@ -147,7 +147,7 @@ export default function Home() {
           size="small"
           target="_blank"
           href="https://linktr.ee/dansquared">
-                    Join the DANimal Kingdom!
+          Join the DANimal Kingdom!
         </Button>
 
       </div>
