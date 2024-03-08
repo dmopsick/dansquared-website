@@ -69,6 +69,23 @@ p, a, label, span, li {
   height: 1200px;
 }
 
+.dib-platform-none, .dib-post-single {
+  margin-bottom: 0px !important;
+}
+
+.blog-section {
+  min-height: 2000px;
+  height: 100%;
+}
+
+.dib-post-single p {
+  margin-bottom: 0px !important;
+}
+
+.blog-section * {
+    font-weight: bold;
+}
+
 .bodyText {
   margin: auto;
   width: 85%;
@@ -88,6 +105,11 @@ a {
   padding-top: 100px;
   color: white;
 }
+
+.blog-Container {
+  padding-top: 100px;
+}
+
 
 .redBackground {
   background-color: #a7171a;

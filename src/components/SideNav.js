@@ -13,6 +13,7 @@ import ExploreIcon from '@mui/icons-material/Explore';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import FeedbackIcon from '@mui/icons-material/Feedback';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import CreateIcon from '@mui/icons-material/Create';
 
 export default function SideNav() {
   const [state, setState] = React.useState({
@@ -71,7 +72,21 @@ export default function SideNav() {
           </ListItem>
         </a>
 
-        {/* <a className='linkNoDecoration' href="/about">
+        <a className='linkNoDecoration' href="/blog">
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <CreateIcon />
+              </ListItemIcon>
+              <ListItemText>
+                                Blog
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+        </a>
+      </List>
+
+      {/* <a className='linkNoDecoration' href="/about">
                     <ListItem disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
@@ -84,68 +99,53 @@ export default function SideNav() {
                     </ListItem>
                 </a> */}
 
-        <a className='linkNoDecoration'
-          target="_blank"
-          rel="noreferrer"
-          href="https://linktr.ee/dansquared">
-          <ListItem disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <ExploreIcon />
-              </ListItemIcon>
-              <ListItemText>
+      <a className='linkNoDecoration'
+        target="_blank"
+        rel="noreferrer"
+        href="https://linktr.ee/dansquared">
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <ExploreIcon />
+            </ListItemIcon>
+            <ListItemText>
                 Links
-              </ListItemText>
-            </ListItemButton>
-          </ListItem>
-        </a>
+            </ListItemText>
+          </ListItemButton>
+        </ListItem>
+      </a>
 
-        <a className='linkNoDecoration'
-          target="_blank"
-          rel="noreferrer"
-          href="https://linktr.ee/dansquared_promoted">
-          <ListItem disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <LocalOfferIcon />
-              </ListItemIcon>
-              <ListItemText>
+      <a className='linkNoDecoration'
+        target="_blank"
+        rel="noreferrer"
+        href="https://linktr.ee/dansquared_promoted">
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <LocalOfferIcon />
+            </ListItemIcon>
+            <ListItemText>
                 Affiliate Links
-              </ListItemText>
-            </ListItemButton>
-          </ListItem>
-        </a>
+            </ListItemText>
+          </ListItemButton>
+        </ListItem>
+      </a>
 
-        <a className='linkNoDecoration'
-          target="_blank"
-          rel="noreferrer"
-          href="https://forms.gle/PrN36pPQ3F96jQZr8">
-          <ListItem disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <FeedbackIcon />
-              </ListItemIcon>
-              <ListItemText>
+      <a className='linkNoDecoration'
+        target="_blank"
+        rel="noreferrer"
+        href="https://forms.gle/PrN36pPQ3F96jQZr8">
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <FeedbackIcon />
+            </ListItemIcon>
+            <ListItemText>
                 Feedback
-              </ListItemText>
-            </ListItemButton>
-          </ListItem>
-        </a>
-
-        {/* <a className='linkNoDecoration' href="/blogs">
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <CreateIcon />
-                            </ListItemIcon>
-                            <ListItemText>
-                                Blog
-                            </ListItemText>
-                        </ListItemButton>
-                    </ListItem>
-                </a> */}
-      </List>
-
+            </ListItemText>
+          </ListItemButton>
+        </ListItem>
+      </a>
     </Box>
   );
 

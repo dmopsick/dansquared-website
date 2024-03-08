@@ -1,15 +1,10 @@
 
 export default function Blog() {
   return (
-    <div className='pageContainer redBackground'>
-      <div className='long-section'>
-        <h1 className='sectionHeader'>Blog Posts</h1>
-        <ul>
-
-
-        </ul>
+    <div className='blog-Container light-blue-background '>
+      <div className='blog-section'>
+        <div id="dib-posts"></div>
       </div>
     </div>
-
   );
 }
