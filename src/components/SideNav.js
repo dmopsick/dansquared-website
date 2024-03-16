@@ -13,7 +13,6 @@ import ExploreIcon from '@mui/icons-material/Explore';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import FeedbackIcon from '@mui/icons-material/Feedback';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import CreateIcon from '@mui/icons-material/Create';
 
 export default function SideNav() {
   const [state, setState] = React.useState({
@@ -67,19 +66,6 @@ export default function SideNav() {
               </ListItemIcon>
               <ListItemText>
                 Merch Shop
-              </ListItemText>
-            </ListItemButton>
-          </ListItem>
-        </a>
-
-        <a className='linkNoDecoration' href="/blog">
-          <ListItem disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <CreateIcon />
-              </ListItemIcon>
-              <ListItemText>
-                                Blog
               </ListItemText>
             </ListItemButton>
           </ListItem>
