@@ -18,7 +18,7 @@ export default function NoMatch() {
         </div>
 
         <p className="sectionCaption" >
-            Money Mike cannot find what you are looking for. Return <a href="/">Home</a>.
+          Money Mike cannot find what you are looking for. Return <a href="/">Home</a>.
         </p>
       </div>
     </div>

@@ -2,14 +2,16 @@ import React from 'react';
 import {Route, Routes} from 'react-router-dom';
 import Home from './components/Home';
 import NoMatch from './components/NoMatch';
-// import AboutUs from './components/AboutUs';
+import ShinyHuntingLanding from './components/shinyhunting/ShinyHuntingLanding.js';
+import DynamaxAdventureCalculator from './components/shinyhunting/DynamaxAdventureCalculator.js';
 
 export default function Router() {
   return (
 
     <Routes>
       <Route path="/" element={<Home/>} />
-      {/* <Route path="about" element={<AboutUs />} /> */}
+      <Route path="/shinyhunting" element={<ShinyHuntingLanding />} />
+      <Route path="/shinyhunting/dynamax-adventures" element={<DynamaxAdventureCalculator />} />
       <Route path="*" element={<NoMatch />} />
     </Routes>
 

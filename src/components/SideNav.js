@@ -31,7 +31,7 @@ export default function SideNav() {
   const list = (anchor) => (
     <Box
       sx={{width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250}}
-      role="presentation"
+      alt="Side Nav"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
@@ -56,6 +56,20 @@ export default function SideNav() {
         </a>
 
         <a className='linkNoDecoration'
+          href="/shinyhunting">
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <ShoppingCartIcon />
+              </ListItemIcon>
+              <ListItemText>
+                Shiny Pokémon Hunting Calculators
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+        </a>
+
+        <a className='linkNoDecoration'
           target="_blank"
           rel="noreferrer"
           href="https://dansquared.shop/">
@@ -70,68 +84,55 @@ export default function SideNav() {
             </ListItemButton>
           </ListItem>
         </a>
-      </List>
 
-      {/* <a className='linkNoDecoration' href="/about">
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <AccountCircleIcon />
-                            </ListItemIcon>
-                            <ListItemText>
-                                About Us
-                            </ListItemText>
-                        </ListItemButton>
-                    </ListItem>
-                </a> */}
-
-      <a className='linkNoDecoration'
-        target="_blank"
-        rel="noreferrer"
-        href="https://linktr.ee/dansquared">
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <ExploreIcon />
-            </ListItemIcon>
-            <ListItemText>
+        <a className='linkNoDecoration'
+          target="_blank"
+          rel="noreferrer"
+          href="https://linktr.ee/dansquared">
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <ExploreIcon />
+              </ListItemIcon>
+              <ListItemText>
                 Links
-            </ListItemText>
-          </ListItemButton>
-        </ListItem>
-      </a>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+        </a>
 
-      <a className='linkNoDecoration'
-        target="_blank"
-        rel="noreferrer"
-        href="https://linktr.ee/dansquared_promoted">
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <LocalOfferIcon />
-            </ListItemIcon>
-            <ListItemText>
+        <a className='linkNoDecoration'
+          target="_blank"
+          rel="noreferrer"
+          href="https://linktr.ee/dansquared_promoted">
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <LocalOfferIcon />
+              </ListItemIcon>
+              <ListItemText>
                 Affiliate Links
-            </ListItemText>
-          </ListItemButton>
-        </ListItem>
-      </a>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+        </a>
 
-      <a className='linkNoDecoration'
-        target="_blank"
-        rel="noreferrer"
-        href="https://forms.gle/PrN36pPQ3F96jQZr8">
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <FeedbackIcon />
-            </ListItemIcon>
-            <ListItemText>
+        <a className='linkNoDecoration'
+          target="_blank"
+          rel="noreferrer"
+          href="https://forms.gle/PrN36pPQ3F96jQZr8">
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <FeedbackIcon />
+              </ListItemIcon>
+              <ListItemText>
                 Feedback
-            </ListItemText>
-          </ListItemButton>
-        </ListItem>
-      </a>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+        </a>
+      </List>
     </Box>
   );
 

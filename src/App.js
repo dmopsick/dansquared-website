@@ -1,7 +1,6 @@
 import './App.css';
 import Router from './Router';
-import {ThemeProvider} from '@mui/material/styles';
-import {createTheme} from '@mui/material/styles';
+import {ThemeProvider, createTheme} from '@mui/material/styles';
 import Header from './components/Header';
 import Footer from './components/Footer';
 

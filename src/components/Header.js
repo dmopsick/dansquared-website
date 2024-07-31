@@ -35,8 +35,8 @@ export default function Header(props) {
         <AppBar>
           <Toolbar className={classes.navBar}>
             <SideNav />
-            <a className={classes.header} href ="/">
-                            DanSquared
+            <a className={classes.header} href="/">
+              DanSquared
             </a>
           </Toolbar>
         </AppBar>
