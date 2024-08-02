@@ -1,3 +1,6 @@
+import {Card, CardContent, FormControlLabel, FormGroup, FormLabel, RadioGroup} from '@mui/material';
+import Radio from '@mui/material/Radio';
+
 export default function DynamaxAdventureCalculator() {
   // Add some react hooks that react to the user input and do the calculations live
 
@@ -12,8 +15,34 @@ export default function DynamaxAdventureCalculator() {
   // Future enhancement... show the likelihood of catching 1, 2, 3... n other shinies along the way
 
   return (
-    <div>
-      Dynamax Adventure Calculator will go here
+    <div className='pageContainer light-blue-background'>
+      <div className='section'>
+        <h1 className="sectionSubheader">Dynamax Adventure Calculator</h1>
+
+        {/* Future enhancement... make the text that displays here rotate */}
+        <p className="sectionCaption">
+          Join my <a href="https://dan2discord.com" target="_blank" rel="noreferrer">Discord Server</a> to not have to raid with the dreaded bots.
+        </p>
+
+        <Card className='card'>
+          <CardContent>
+            <FormGroup>
+              <FormLabel id="shiny-charm-label">Do you have the Shiny Charm?</FormLabel>
+              <RadioGroup
+                row
+                aria-labelledby="shiny-charm-label"
+                name="shiny-charm-buttons-group">
+                <FormControlLabel value="true" control={<Radio />} label="Yes😎" />
+                <FormControlLabel value="false" control={<Radio />} label="No I need to catch them all" />
+              </RadioGroup>
+            </FormGroup>
+
+          </CardContent>
+
+        </Card>
+
+
+      </div>
     </div>
   );
 }

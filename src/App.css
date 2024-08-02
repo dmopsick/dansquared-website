@@ -153,10 +153,6 @@ a {
   /* background-color: #a7171a !important; */
 }
 
-.blog-title {
-  text-align: center;
-}
-
 .text-background {
   background: lightgray;
   background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
@@ -173,7 +169,6 @@ a {
   animation: arrow-jump 1s infinite;
   color: #fafafa;
 }
-
 
 
 /*  TODO move these styles to their own file */
