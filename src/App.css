@@ -173,3 +173,12 @@ a {
   animation: arrow-jump 1s infinite;
   color: #fafafa;
 }
+
+
+
+/*  TODO move these styles to their own file */
+
+.card {
+  margin: auto;
+  max-width: 350px;
+}
