@@ -5,7 +5,7 @@ import DynamaxAdventurePic from '../../images/dynamax-adventures-card.png';
 
 export default function ShinyHuntingLanding() {
   return (
-    <div className="pageContainer light-blue-background">
+    <div className='pageContainer light-blue-background'>
       <div className='section'>
         <h1 className="sectionHeader">Shiny Pokémon Hunting Calculators</h1>
 
