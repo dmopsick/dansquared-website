@@ -18,7 +18,7 @@ export default function ShinyHuntingLanding() {
         {/* Make card elements here to link to different calculators */}
 
         {/* Dynamax Adventure Calculator */}
-        <a href="/shinyhunting/dynamax-adventures">
+        <a href="/shinyhunting/dynamax-adventures-shiny-odds-calculator">
           <Card className='card'>
             <CardActionArea>
               <CardMedia

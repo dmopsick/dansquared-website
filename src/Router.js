@@ -11,7 +11,7 @@ export default function Router() {
     <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/shinyhunting" element={<ShinyHuntingLanding />} />
-      <Route path="/shinyhunting/dynamax-adventures" element={<DynamaxAdventureCalculator />} />
+      <Route path="/shinyhunting/dynamax-adventures-shiny-odds-calculator" element={<DynamaxAdventureCalculator />} />
       <Route path="*" element={<NoMatch />} />
     </Routes>
 
