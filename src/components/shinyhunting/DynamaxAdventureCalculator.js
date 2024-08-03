@@ -44,8 +44,10 @@ function loadFlavorText(odds, numEncounters) {
     return 'Ah gotta love a fresh hunt';
   } else if (odds > 0) {
     return 'Gotta start somewhere!';
+  } else if (odds == 0) {
+    return 'Enter valid data above to get results...';
   }
-  return 'Enter valid data above to get results...';
+  return 'Haha very funny I have not blocked you from selecting negative encounters yet.';
 }
 
 export default function DynamaxAdventureCalculator() {
@@ -68,13 +70,11 @@ export default function DynamaxAdventureCalculator() {
     const shinyChance = calculateSingleEventProbability(favorableOutcomes, TOTAL_OUTCOMES, numEncounters);
 
     if (shinyChance < 0) {
-      setMainHuntShinyOdds('Haha very funny, you cannot have negative odds.');
-      return;
+      setMainHuntShinyOdds(0);
     }
     setMainHuntShinyOdds((shinyChance * 100).toFixed(2));
 
     setFlavorText(loadFlavorText((shinyChance * 100).toFixed(2)));
-    console.log('Flag 1 ' + flavorText);
   }, [shinyCharm, numEncounters]);
 
   // In the future can render a sprite of the Pokemon that the user is searching for
