@@ -1,7 +1,7 @@
 import {Card, CardContent, FormControlLabel, FormGroup, FormLabel, RadioGroup, Typography} from '@mui/material';
 import Radio from '@mui/material/Radio';
 import TextField from '@mui/material/TextField';
-import {useEffect, useState} from 'react';
+import {useLayoutEffect, useState} from 'react';
 import calculateSingleEventProbability from './SingleEventProbability';
 
 const FAVORABLE_OUTCOMES_NO_CHARM = 1;
@@ -11,13 +11,54 @@ const TOTAL_OUTCOMES = 300;
 const NO_SHINY_CHARM = 0;
 const HAS_SHINY_CHARM = 1;
 
+function loadFlavorText(odds, numEncounters) {
+  console.log(odds);
+  // Todo add a random number generator that we can use to load one of 3 text responses per range
+  if (odds > 98) {
+    return 'It is actually absurd you have not caught this shiny by now...';
+  } else if (odds > 90) {
+    return 'This is some BRUTAL luck.';
+  } else if (odds > 80) {
+    return 'Yikes. I thought you would have caught it by now.';
+  } else if (odds > 70) {
+    return 'So this was REALLY not one of the quicker hunts. That is ok. Lock in, you are right there!';
+  } else if (odds > 60) {
+    return 'Any one of these encounters could be the one...';
+  } else if (numEncounters == 60) {
+    return 'Nice! You made it to 50% odds which is NOT 50 encounters.';
+  } else if (odds > 50) {
+    return 'You are over half odds at this point. Surely the next one will be shiny...';
+  } else if (odds > 40) {
+    return 'No one said this was going to be easy. Just remember all DANimals are smart and cute';
+  } else if (odds > 30) {
+    return 'It\'s still early don\'t worry. The next one is for sure shiny';
+  } else if (odds > 20) {
+    return 'If you are still doing DAs with bots, join my Discord (https://dan2discord.com/) for raid lives and to find folks to raid with.';
+  } else if (odds > 10) {
+    return 'It\'s still early! You can still get an early score! Do not lose hope!';
+  } else if (odds > 5) {
+    return 'OK so it was not an instant catch. But maybe the next one shines';
+  } else if (odds > 3) {
+    return 'Now we are making progress';
+  } else if (odds > 2) {
+    return 'Ah gotta love a fresh hunt';
+  } else if (odds > 0) {
+    return 'Gotta start somewhere!';
+  }
+  return 'Enter valid data above to get results...';
+}
+
 export default function DynamaxAdventureCalculator() {
   const [shinyCharm, setShinyCharm] = useState(0);
   const [numEncounters, setNumEncounters] = useState(0);
   const [mainHuntShinyOdds, setMainHuntShinyOdds] = useState(0);
+  // eslint-disable-next-line no-unused-vars
+  const [pokemonName, setPokemonName] = useState('Pokémon');
+  // eslint-disable-next-line no-unused-vars
+  const [flavorText, setFlavorText] = useState('Enter some data above to get results...');
 
   // Add some react hooks that react to the user input and do the calculations live
-  useEffect(() => {
+  useLayoutEffect(() => {
     let favorableOutcomes = FAVORABLE_OUTCOMES_NO_CHARM;
 
     if (shinyCharm == HAS_SHINY_CHARM) {
@@ -26,11 +67,14 @@ export default function DynamaxAdventureCalculator() {
 
     const shinyChance = calculateSingleEventProbability(favorableOutcomes, TOTAL_OUTCOMES, numEncounters);
 
-    if (shinyChance >= 0) {
-      setMainHuntShinyOdds((shinyChance * 100).toFixed(2));
-    } else {
+    if (shinyChance < 0) {
       setMainHuntShinyOdds('Haha very funny, you cannot have negative odds.');
+      return;
     }
+    setMainHuntShinyOdds((shinyChance * 100).toFixed(2));
+
+    setFlavorText(loadFlavorText((shinyChance * 100).toFixed(2)));
+    console.log('Flag 1 ' + flavorText);
   }, [shinyCharm, numEncounters]);
 
   // In the future can render a sprite of the Pokemon that the user is searching for
@@ -54,6 +98,7 @@ export default function DynamaxAdventureCalculator() {
             <Typography gutterBottom variant="h5" component="div" className='center-text'>
               Dynamax Adventure Shiny Odds Calculator
             </Typography>
+            <hr/>
             <FormGroup>
               <FormLabel id="shiny-charm-label">Do you have the Shiny Charm?</FormLabel>
               <RadioGroup
@@ -78,9 +123,23 @@ export default function DynamaxAdventureCalculator() {
               />
             </FormGroup>
 
-            <Typography gutterBottom variant="h5" component="div" className='marginTop'>
-                Shiny Odds: {mainHuntShinyOdds}%
+            <Typography gutterBottom variant="h5" component="div" className='marginTop center-text'>
+              The DANalytics
             </Typography>
+            <Typography gutterBottom variant="body2" component="div">
+              {flavorText}
+            </Typography>
+            <hr/>
+
+            <Typography variant="body">
+              Likelihood to catch the shiny {pokemonName} after {numEncounters} encounters: {mainHuntShinyOdds}%
+            </Typography>
+            <p>
+              <Typography variant="body" className='marginTop'>
+                Likelihood to not catch the shiny {pokemonName} after {numEncounters} encounters: {100 - mainHuntShinyOdds}%
+              </Typography>
+            </p>
+
 
           </CardContent>
         </Card>
