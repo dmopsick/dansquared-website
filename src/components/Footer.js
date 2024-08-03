@@ -47,7 +47,7 @@ export default function Footer() {
           <a className='socialIconLink'
             target="_blank"
             rel="noreferrer"
-            href="https://www.discord.gg/dansquared">
+            href="https://dan2discord.com/">
             <img
               src="../discord.png"
               alt="Discord Logo"
