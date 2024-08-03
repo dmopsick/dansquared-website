@@ -33,7 +33,7 @@ function loadFlavorText(odds, numEncounters) {
   } else if (odds > 30) {
     return 'It\'s still early don\'t worry. The next one is for sure shiny';
   } else if (odds > 20) {
-    return 'If you are still doing DAs with bots, join my Discord (https://dan2discord.com/) for raid lives and to find folks to raid with.';
+    return 'If you are still doing DAs with bots, join my Discord linked above for raid lives and to find folks to raid with.';
   } else if (odds > 10) {
     return 'It\'s still early! You can still get an early score! Do not lose hope!';
   } else if (odds > 5) {
