@@ -18,7 +18,8 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 'bolder !important',
     fontSize: '28px',
     color: 'white',
-    fontFamily: 'Bebas-Neue',
+    fontFamily: 'Bebas Neue !important',
+    letterSpacing: '1px',
     textDecoration: 'none',
   },
 
@@ -43,7 +44,6 @@ export default function Header(props) {
       </HideOnScroll>
 
     </React.Fragment>
-
 
   );
 }

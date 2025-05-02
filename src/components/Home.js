@@ -71,11 +71,10 @@ export default function Home() {
           paddingTop: '80px',
         }}>
           <div className='text-background'>
-            <h1 className='sectionHeader'>Play the games you love with good people</h1>
+            <h1 className='sectionHeader'>Who am I?</h1>
             <div className='sectionCaption'>
-              My mission is to build an inclusive and energetic community through engaging, entertaining, and most importantly FUN content.
-              I want to recapture that magic we all felt as kids playing our favorite games with friends in my streams and videos.
-              It is my goal every day to make at least one viewer&apos;s day better.
+              My name is Dan Mopsick and my goal is to bring people together around my favorite game franchise, Pokémon.
+              I am a content creator, software developer, aspiring adult athlete, and competitive Pokémon Trading Card Game Player.
             </div>
           </div>
         </div>
@@ -99,19 +98,17 @@ export default function Home() {
       </div>
 
       <div id="section3" className='section light-blue-background'>
-        <h1 className='sectionHeader'>Who am I?</h1>
+        <h1 className='sectionHeader'>What do I do?</h1>
         <p className='sectionCaption'>
-          My name is Sun Dan and my goal is to bring people together around my favorite games.
           I stream on TikTok and YouTube. I am a member of the <a target='_blank' rel='noreferrer' href='https://tiktoklivestream.com/'>Diffraction TikTok Live Agency</a>.
-          I get a lot of fulfilment out of making other people laugh or happy which drives me to make the best content I possibly can each day.
+          I want to recapture that magic we all felt as kids playing our favorite games with friends in my streams and videos.
         </p>
 
         <img className='rounded-face-image'
           src={SunDanFace}
-          alt="Sun Dan"
+          alt="Dan Mopsick"
         />
-        <h2 className='sectionCaption'>Sun Dan</h2>
-
+        <h2 className='sectionCaption'>Dan (6 foot 3)</h2>
         <Link to="section4"
           smooth={true}
           duration={500}
@@ -135,11 +132,10 @@ export default function Home() {
         <h1 className='sectionHeader'>The DANimal Kingdom</h1>
         <p className='sectionCaption'>
           I believe you cannot fake passion and enthusiasm.
-          I am passionate about making content and engaging with my community, The DANimals.
+          It is my goal every day to make at least one viewer&apos;s day better with every stream and video.
           <br />
-          I specialize in Pokemon content.
-          I am a Tera Raid expert. I also enjoy shiny hunting and making Pokémon theories.
-          I believe it&apos;s less about what we are playing and more about who we are playing it with.
+          I love all things Pokémon. Especially the mainline games and the Trading Card Game.
+          I believe it&apos;s less about what game we are playing and more about the people we are playing it with.
         </p>
 
         <Button className='button'
